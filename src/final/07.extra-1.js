@@ -16,7 +16,7 @@ function FocusDemo() {
 
   React.useEffect(() => {
     if (autoShuffle) {
-      const id = setInterval(() => setItems(shuffle), 1000)
+      const id = setInterval(() => setItems(shuffle), 2000)
       return () => clearInterval(id)
     }
   }, [autoShuffle])
